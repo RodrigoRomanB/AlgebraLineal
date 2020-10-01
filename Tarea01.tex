@@ -1,0 +1,81 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\graphicspath{ {./images/} }
+\begin{document}
+\begin{titlepage}
+\centering
+{\includegraphics[width=1 \textwidth]{logo.jpg}\par}
+\vspace{1cm}
+{\bfseries\Large UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO \par}
+\vspace{.5cm}
+{\scshape\Large Facultad de Ciencias \par}
+\vspace{2cm}
+{\scshape\Huge Tarea 1 \par}
+\vspace{3cm}
+{\itshape\Large Álgebra Lineal 1 \par}
+\vfill
+{\Large Rodrigo Román Barrera \par}
+{\Large 314012885 \par}
+\vfill
+{\Large 02/Octubre/2020 \par}
+\end{titlepage}
+\newpage
+\begin{enumerate} 
+\item {\bfseries 
+Determina cuál de las siguientes estructuras algebraicas es un campo y en caso de que no lo sea explica que propiedad no satisface: los números naturales (sin el cero), los naturales unión el cero, los enteros, los racionales, los reales y los complejos.}
+\begin{itemize}
+\item Los números naturales sin el cero carece de elemento neutro para la adición y de inversos.
+\item Los números naturales unión el cero carece de inversos.
+\end{itemize}
+\item {\bfseries 
+Da dos matrices A, B de 3x3 con coeficientes reales, haz su suma, su diferencia, y la multiplicación de una de ellas por el escalar $\lambda\  = -3$.}
+
+\vspace{.5cm}
+$A=\begin{pmatrix}\vspace{.1cm} 7 & \frac{1}{2} & -5\\\vspace{.1cm} 3 & \frac{1}{8} & -\frac{7}{6}\\ 1 & \frac{3}{4} & -10 \end{pmatrix}$\qquad 
+$B=\begin{pmatrix}\vspace{.1cm} 0 & -3 & 15\\\vspace{.1cm} 2 & \frac{21}{6} & 3\\ 4 & -7 & 9 \end{pmatrix}$\qquad
+$\lambda\  = -3$
+\begin{itemize}
+\item $A+B=\begin{pmatrix}\vspace{.1cm} (7+0) & (\frac{1}{2}+(-3)) & (-5+15)\\\vspace{.1cm} (3+2) & (\frac{1}{8}+\frac{21}{6}) & (-\frac{7}{6}+3)\\ (1+4) & (\frac{3}{4}+(-7)) & (-10+9) \end{pmatrix}$\qquad =
+$\begin{pmatrix}\vspace{.1cm} 7 & -\frac{5}{2} & 10\\\vspace{.1cm} 5 & \frac{29}{8} & \frac{11}{6}\\ 5 & -\frac{25}{4} & -1 \end{pmatrix}$
+\vspace{.3cm}
+\item $A-B=\begin{pmatrix}\vspace{.1cm} (7-0) & (\frac{1}{2}-(-3)) & (-5-15)\\\vspace{.1cm} (3-2) & (\frac{1}{8}-\frac{21}{6}) & (-\frac{7}{6}-3)\\ (1-4) & (\frac{3}{4}-(-7)) & (-10-9) \end{pmatrix}$\qquad =
+$\begin{pmatrix}\vspace{.1cm} 7 & \frac{7}{2} & -20\\\vspace{.1cm} 1 & -\frac{27}{8} & -\frac{25}{6}\\ -3 & \frac{31}{4} & -9 \end{pmatrix}$
+\vspace{.3cm}
+\item $\lambda\/B=\begin{pmatrix}\vspace{.1cm} (0)(-3) & (-3)(-3) & (15)(-3)\\\vspace{.1cm} (2)(-3) & (\frac{21}{6})(-3) & (3)(-3)\\ (4)(-3) & (-7)(-3) & (9)(-3) \end{pmatrix}$\qquad =
+$\begin{pmatrix}\vspace{.1cm} 0 & 9 & -45\\\vspace{.1cm} -6 & -\frac{21}{2} & -9\\ -12 & 21 & -27 \end{pmatrix}$
+\end{itemize}
+\item {\bfseries 
+Da una matriz A de tamaño 3x2 y una matriz B de tamaño 2x3, calcula las matrices AB y BA.}
+
+\vspace{.5cm}
+$A=\begin{pmatrix}\vspace{.1cm} 8 & 0 & -\frac{5}{7} \\ -15 & \frac{2}{3} & 6 \end{pmatrix}$\qquad
+$B=\begin{pmatrix}\vspace{.1cm} -\frac{3}{4} & -22 \\\vspace{.1cm} 11 & \frac{7}{15} \\ 35 & 6 \end{pmatrix}$
+\begin{itemize}
+    \item $AB=\begin{pmatrix}\vspace{.1cm}((8)(-\frac{3}{4})+ (0)(11)+ (-\frac{5}{7})(35)) & ((8)(-22)+(0)(\frac{7}{15})+(-\frac{5}{7})(6)) \\ ((-15)(-\frac{3}{4})+(\frac{2}{3})(11)+(6)(35)) & ((-15)(-22)+(\frac{2}{3})(\frac{7}{15})+(6)(6))\end{pmatrix}$
+    
+    \vspace{.2cm}
+    $\phantom{AB}=\begin{pmatrix}\vspace{.1cm}-31 & -\frac{1262}{7} \\ \frac{2743}{12} & \frac{16484}{45}\end{pmatrix}$
+    \vspace{.3cm}
+    \item $BA=\begin{pmatrix}\vspace{.1cm}((-\frac{3}{4})(8)+(-22)(-15)) & ((-\frac{3}{4})(0)+(-22)(\frac{2}{3}) & ((-\frac{3}{4})(-\frac{5}{7})+(-22)(6)) \\\vspace{.1cm}((11)(8)+(\frac{7}{15})(-15)) & ((11)(0)+(\frac{7}{15})(\frac{2}{3})) & ((11)(-\frac{5}{7})+(\frac{7}{15})(6)) \\((35)(8)+(6)(-15)) & ((35)(0)+(6)(\frac{2}{3})) & ((35(-\frac{5}{7})+(6)(6))\end{pmatrix}$
+    
+    \vspace{.2cm}
+    $\phantom{AB}=\begin{pmatrix}\vspace{.1cm}324 & -\frac{44}{3} & -\frac{3681}{28} \\\vspace{.1cm}81 & \frac{14}{45} & -\frac{177}{35} \\190 & 4 & 11\end{pmatrix}$
+\end{itemize}
+\item {\bfseries¿Alguna de tus matrices del ejercicio 3 puede ser invertible? Justifica tu respuesta.}
+\begin{itemize}
+    \item Niguna de las matrices A o B se pueden invertir debido a que no son matrices cuadradas.
+    \item $AB^{-1}=(\frac{1}{((-31)(\frac{16484}{45}))-((-\frac{1262}{7})(\frac{2743}{12}))})\begin{pmatrix}\vspace{.1cm}\frac{16484}{45} & \frac{1262}{7} \\ -\frac{2743}{12} & -31\end{pmatrix}$\qquad =
+    $\begin{pmatrix}\vspace{.1cm}\frac{17752}{1446803} & \frac{113580}{18808439} \\ -\frac{22155}{2893606} & -\frac{19530}{18808439}\end{pmatrix}$    
+    \vspace{.3cm}
+    \item $|BA|=((324)(\frac{14}{45})(11))+((-\frac{44}{3})(-\frac{177}{35})(190))+((-\frac{3681}{28})(81)(4))=0$ 
+    
+    \vspace{.1cm}
+    $\phantom{|B|=}-((190)(\frac{14}{45})(-\frac{3681}{28}))-((4)(-\frac{177}{35})(324))-(11)(81)(-\frac{44}{3}))$
+    
+    \vspace{.2cm}
+    Debido a que $|BA|=0$, BA no tiene matriz inversa. 
+\end{itemize}
+\end{enumerate}
+
+\end{document}
